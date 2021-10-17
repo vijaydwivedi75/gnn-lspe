@@ -1,0 +1,47 @@
+{
+    "gpu": {
+        "use": true,
+        "id": 0
+  },
+    "model": "GraphiT",
+    "dataset": "OGBG-MOLTOX21",
+    "out_dir":"out/GraphiT_MOLTOX21_NoPE/",
+
+
+    "params": {
+        "seed": 41,
+        "epochs": 1000,
+        "batch_size": 128,
+        "init_lr": 0.0007,
+        "lr_reduce_factor": 0.5,
+        "lr_schedule_patience": 25,
+        "min_lr": 1e-6,
+        "weight_decay": 0.0,
+        "print_epoch_interval": 5,
+        "max_time": 96
+  },
+    "net_params": {
+        "full_graph": true,
+
+        "L": 10,
+        "hidden_dim": 88,
+        "out_dim": 88,
+        "n_heads": 8,
+
+        "residual": true,
+        "readout": "sum",
+        "in_feat_dropout": 0.0,
+        "dropout": 0.5,
+        "layer_norm": false,
+        "batch_norm": true,
+        
+        "use_lapeig_loss": false,
+        "alpha_loss": 1e-4,
+        "lambda_loss": 1000,
+        "pe_init": "no_pe",
+        "pos_enc_dim": 12,
+        "adaptive_edge_PE": true,
+        "p_steps": 16,
+        "gamma": 0.25
+  }
+}

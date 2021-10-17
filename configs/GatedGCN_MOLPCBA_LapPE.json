@@ -1,0 +1,41 @@
+{
+    "gpu": {
+        "use": true,
+        "id": 0
+    },
+    
+    "model": "GatedGCN",
+    "dataset": "OGBG-MOLPCBA",
+    
+    "out_dir": "out/GatedGCN_MOLPCBA_LapPE/",
+    
+    "params": {
+        "seed": 41,
+        "epochs": 1000,
+        "batch_size": 256,
+        "init_lr": 0.001,
+        "lr_reduce_factor": 0.5,
+        "lr_schedule_patience": 25,
+        "min_lr": 1e-4,
+        "weight_decay": 0.0,
+        "print_epoch_interval": 1,
+        "max_time": 48
+    },
+    
+    "net_params": {
+        "L": 8,
+        "hidden_dim": 154,
+        "out_dim": 154,
+        "residual": true,
+        "edge_feat": true,
+        "readout": "mean",
+        "in_feat_dropout": 0.0,
+        "dropout": 0.1,
+        "batch_norm": true,
+        "pos_enc_dim": 3,
+        "pe_init": "lap_pe",
+        "use_lapeig_loss": false,
+        "alpha_loss": 1e-3,
+        "lambda_loss": 100
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "gpu": {
+        "use": true,
+        "id": 0
+    },
+    
+    "model": "PNA",
+    "dataset": "ZINC",
+    
+    "out_dir": "out/PNA_ZINC_NoPE/",
+    
+    "params": {
+        "seed": 41,
+        "epochs": 1000,
+        "batch_size": 128,
+        "init_lr": 0.001,
+        "lr_reduce_factor": 0.5,
+        "lr_schedule_patience": 25,
+        "min_lr": 1e-6,
+        "weight_decay": 3e-6,
+        "print_epoch_interval": 5,
+        "max_time": 48
+    },
+    
+    "net_params": {
+        "L": 16,
+        "hidden_dim": 70,
+        "out_dim": 70,
+        "residual": true,
+        "edge_feat": true,
+        "readout": "sum",
+        "in_feat_dropout": 0.0,
+        "dropout": 0.0,
+        "graph_norm": true,
+        "batch_norm": true,
+        "aggregators": "mean max min std",
+        "scalers": "identity amplification attenuation",
+        "towers": 5,
+        "divide_input_first": true,
+        "divide_input_last": true,
+        "gru": false,
+        "edge_dim": 40,
+        "pretrans_layers" : 1,
+        "posttrans_layers" : 1,
+        "use_lapeig_loss": false,
+        "alpha_loss": 1e-4,
+        "lambda_loss": 1000,
+        "pe_init": "no_pe",
+        "pos_enc_dim": 16
+    }
+}
