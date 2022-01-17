@@ -342,7 +342,7 @@ class PNANoTowersLSPELayer(nn.Module):
         
         if self.residual:
             h = h_in + h  # residual connection
-            h = p_in + p  # residual connection
+            p = p_in + p  # residual connection
         
         return h, p
 
