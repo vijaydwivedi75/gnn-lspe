@@ -37,8 +37,8 @@ We propose a novel GNN architecture in which the structural and positional repre
 ## 4. Reference 
 
 :page_with_curl: Paper [on arXiv](https://arxiv.org/abs/2110.07875)  
-:movie_camera: Video by @vijaydwivedi75 [on YouTube](https://youtu.be/fft2Q0jEWi0)
-:movie_camera: Video by @xbresson [on YouTube](https://youtu.be/hADjUl4ymoQ)
+:movie_camera: Video by [@vijaydwivedi75](https://github.com/vijaydwivedi75) [on YouTube](https://youtu.be/fft2Q0jEWi0)   
+:movie_camera: Video by [@xbresson](https://github.com/xbresson) [on YouTube](https://youtu.be/hADjUl4ymoQ)   
 ```
 @inproceedings{dwivedi2022graph,
   title={Graph Neural Networks with Learnable Structural and Positional Representations},
