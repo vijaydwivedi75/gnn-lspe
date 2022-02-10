@@ -4,7 +4,7 @@
 
 <br>
 
-Source code for the paper "**[Graph Neural Networks with Learnable Structural and Positional Representations](https://openreview.net/pdf?id=wTTjnvGphYj)**" by Vijay Prakash Dwivedi, Anh Tuan Luu, Thomas Laurent, Yoshua Bengio and Xavier Bresson, at the **Tenth International Conference on Tenth International Conference on Learning Representations (ICLR) 2022**.
+Source code for the paper "**[Graph Neural Networks with Learnable Structural and Positional Representations](https://openreview.net/pdf?id=wTTjnvGphYj)**" by Vijay Prakash Dwivedi, Anh Tuan Luu, Thomas Laurent, Yoshua Bengio and Xavier Bresson, at the **Tenth International Conference on Learning Representations (ICLR) 2022**.
 
 We propose a novel GNN architecture in which the structural and positional representations are decoupled, and are learnt separately to learn these two essential properties. The architecture, named **MPGNNs-LSPE** (MPGNNs with **L**earnable **S**tructural and **P**ositional **E**ncodings), is generic that it can be applied to any GNN model of interest which fits into the popular 'message-passing framework', including Transformers.
 
